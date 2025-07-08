@@ -1,0 +1,25 @@
+Disini ada beberapa perintah dasar Linux:
+
+1. 'whoami'     = Digunakan untuk menampilkan nama User.
+2. 'hostname'   = Digunakan untuk menampilkan nama Host/Komputer.
+3. 'pwd' (print working directory) = Digunakan untuk menampilkan direktori saat ini
+                                     pada saat menjalankan Terminal/CLI(Command Line Interface).
+4. 'ls' (list)    = Digunakan untuk menampilkan file/folder pada direktori command 'ls' ini diberikan.
+5. 'ls -la'       = Digunakan untuk menampilkan file yang tersembunyi pada direktori command 'ls -la'
+                    diberikan. Biasanya awalan file ada '.' titiknya.
+6. 'man' (manual) = Digunakan untuk menampilkan dokumentasi command/perintah, seperti 'man ls' yang
+                    nantinya akan menampilkan dokumentasi perintah dari 'ls'.
+7. 'Click TAB'    = Gunakan tombol TAB dalam memberikan command/perintah untuk menampilkan
+                    opsi apa saja yang bisa dilakukan oleh command yang digunakan tersebut, 
+                    seperti contoh: 
+                    berikan command 'who' dan klick tombol TAB (double/duaKali) 
+                    nantinya CLI akan mengeluarkan output 'who', 'whoami', 'whois'. Juga bisa
+                    digunakan untuk mempercepat penulisan command.
+
+
+
+0. 'tr a-z A-Z'     = Digunakan untuk mengubah dari huruf default menjadi huruf besar/kecil 
+                      dengan mengkombinasikan command 'echo' dan '| (pipe)'.
+0. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
+0. 'echo'   = Digunakan untuk menghasilkan string atau print string dalam CLI.
+
