@@ -22,4 +22,3 @@ Disini ada beberapa perintah dasar Linux:
                       dengan mengkombinasikan command 'echo' dan '| (pipe)'.
 0. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
 0. 'echo'   = Digunakan untuk menghasilkan string atau print string dalam CLI.
-
