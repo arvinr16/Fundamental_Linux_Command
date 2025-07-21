@@ -22,3 +22,7 @@ Disini ada beberapa perintah dasar Linux:
 11. 'cp'      = Digunakan untuk Copy Paste file,
                 contoh: 'cp [nama file awal] [tujuan] [nama file baru]'
                         'cp test.txt ~/Documents/Latihan/testBaru.txt'
+12. 'mv'	  = Digunakan untuk mengganti nama file atau direktori,
+			    contoh: 'mv [nama awal] [nama baru]'
+
+
