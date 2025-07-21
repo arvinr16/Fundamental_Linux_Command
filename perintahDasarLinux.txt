@@ -24,5 +24,5 @@ Disini ada beberapa perintah dasar Linux:
                         'cp test.txt ~/Documents/Latihan/testBaru.txt'
 12. 'mv'	  = Digunakan untuk mengganti nama file atau direktori,
 			    contoh: 'mv [nama awal] [nama baru]'
-
+13. 'touch'   = Untuk membuat file .txt
 
