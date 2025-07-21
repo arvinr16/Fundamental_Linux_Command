@@ -15,10 +15,14 @@ Disini ada beberapa perintah dasar Linux:
                     berikan command 'who' dan klick tombol TAB (double/duaKali) 
                     nantinya CLI akan mengeluarkan output 'who', 'whoami', 'whois'. Juga bisa
                     digunakan untuk mempercepat penulisan command.
-
-
-
-0. 'tr a-z A-Z'     = Digunakan untuk mengubah dari huruf default menjadi huruf besar/kecil 
+8. 'tr a-z A-Z'   = Digunakan untuk mengubah dari huruf default menjadi huruf besar/kecil 
                       dengan mengkombinasikan command 'echo' dan '| (pipe)'.
-0. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
-0. 'echo'   = Digunakan untuk menghasilkan string atau print string dalam CLI.
+9. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
+10. 'echo'    = Digunakan untuk menghasilkan string atau print string dalam CLI.
+11. 'cp'      = Digunakan untuk Copy Paste file,
+                contoh: 'cp [nama file awal] [tujuan] [nama file baru]'
+                        'cp test.txt ~/Documents/Latihan/testBaru.txt'
+12. 'mv'	  = Digunakan untuk mengganti nama file atau direktori,
+			    contoh: 'mv [nama awal] [nama baru]'
+13. 'touch'   = Untuk membuat file .txt
+
