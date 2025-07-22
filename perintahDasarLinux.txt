@@ -1,5 +1,6 @@
-Disini ada beberapa perintah dasar Linux:
+<======= Selamat datang di dokumentasi saya dalam hal perintah/command Linux =======>
 
+Disini ada beberapa perintah dasar Linux:
 1. 'whoami'     = Digunakan untuk menampilkan nama User.
 2. 'hostname'   = Digunakan untuk menampilkan nama Host/Komputer.
 3. 'pwd' (print working directory) = Digunakan untuk menampilkan direktori saat ini
@@ -7,22 +8,52 @@ Disini ada beberapa perintah dasar Linux:
 4. 'ls' (list)    = Digunakan untuk menampilkan file/folder pada direktori command 'ls' ini diberikan.
 5. 'ls -la'       = Digunakan untuk menampilkan file yang tersembunyi pada direktori command 'ls -la'
                     diberikan. Biasanya awalan file ada '.' titiknya.
-6. 'man' (manual) = Digunakan untuk menampilkan dokumentasi command/perintah, seperti 'man ls' yang
+6. 'ls ..'        = Digunakan untuk menampilkan file pada direktori sebelum direktori kita berada saat ini.
+7. 'man' (manual) = Digunakan untuk menampilkan dokumentasi command/perintah, seperti 'man ls' yang
                     nantinya akan menampilkan dokumentasi perintah dari 'ls'.
-7. 'Click TAB'    = Gunakan tombol TAB dalam memberikan command/perintah untuk menampilkan
+8. 'Click TAB'    = Gunakan tombol TAB dalam memberikan command/perintah untuk menampilkan
                     opsi apa saja yang bisa dilakukan oleh command yang digunakan tersebut, 
                     seperti contoh: 
                     berikan command 'who' dan klick tombol TAB (double/duaKali) 
                     nantinya CLI akan mengeluarkan output 'who', 'whoami', 'whois'. Juga bisa
                     digunakan untuk mempercepat penulisan command.
-8. 'tr a-z A-Z'   = Digunakan untuk mengubah dari huruf default menjadi huruf besar/kecil 
+*. 'clear'        = Digunakan untuk membersihkan tampilan dalam terminal 
+                    setelah kita gunakan untuk memberikan beberapa perintah.
+*. 'touch'        = Untuk membuat file timestamp seperti file '.txt'
+*. 'mkdir' (make directories) = Digunakan untuk membuat suatu direktori baru.
+*. 'mkdir -p'     = Digunakan untuk membuat direktori lebih dari satu di folder yang dibuat dengan -p (parent).
+*. 'cd' (change directories) = Digunakan untuk berpindah direktori.
+*. 'cp' (copy)    = Digunakan untuk Copy file dan direktori,
+                     contoh: 'cp [nama file awal] [tujuan] [nama file baru]'
+                     'cp test.txt ~/Documents/Latihan/testBaru.txt'
+                     'cp test.txt ..(dua titik digunakan untuk copy file direktori sebelumnya)/[nama file awal] 
+                     .(titik digunakan untuk paste ke direktori saat ini)'
+*. 'mv'	     = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti nama file atau direktori,
+			    contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
+                contoh ganti nama file: 'mv [nama awal] [nama baru]'
+*. 'rm' (remove) = Digunakan untuk menghapus suatu file.
+*. 'rmdir'       = Digunakan untuk menghapus suatu direktori.
+                   Bisa juga dengan menggunakan perintah 'rm -r' yang nantinya akan ditanyai jika ada file yang dilindungi.
+                   Bisa juga dengan menggunakan perintah 'rm -rf' yang nantinya langsung dihapus tanpa ditanyai oleh sistem
+                   jika ada file yang dilindungi. r untuk recursive dan f untuk force.
+*. 'sudo'        = Digunakan untuk mengganti user.
+                    contoh : 'sudo su' digunakan untuk mengganti user biasa/normal menjadi user root.
+                    su = super user.
+*. 'exit'        = Digunakan untuk keluar dari user saat ini di terminal/CLI.
+*. 'history'     = Digunakan untuk melihat riwayat/history perintah-perintah yang sudah pernah 
+                   kita jalankan dalam suatu terminal/CLI.
+*. 'file'    = Untuk mengidentifikasi tipe suatu file berdasarkan isi filenya bukan ekstensinya.
+*. 'tr a-z A-Z'   = Digunakan untuk mengubah dari huruf default menjadi huruf besar/kecil 
                       dengan mengkombinasikan command 'echo' dan '| (pipe)'.
-9. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
-10. 'echo'    = Digunakan untuk menghasilkan string atau print string dalam CLI.
-11. 'cp'      = Digunakan untuk Copy Paste file,
-                contoh: 'cp [nama file awal] [tujuan] [nama file baru]'
-                        'cp test.txt ~/Documents/Latihan/testBaru.txt'
-12. 'mv'	  = Digunakan untuk mengganti nama file atau direktori,
-			    contoh: 'mv [nama awal] [nama baru]'
-13. 'touch'   = Untuk membuat file .txt
+*. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
+*. 'echo'    = Digunakan untuk menghasilkan string atau print string dalam CLI.
+*. '
+
+
+
+Penjelasan lain-lain:
+1. '.' (satu titik)  = Titik satu berarti direktori sekarang.
+2. '..' (titik dua)  = Titik dua berarti direktori sebelumnya pada saat kita membuka suatu direktori.
+3. '.(file)' (titik) = Awalan file/folder yang ada titiknya, 
+                       bertanda dalam terminal/CLI untuk sebuah file yang berarti file tersebut di hide atau disembunyikan
 
