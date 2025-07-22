@@ -17,30 +17,30 @@ Disini ada beberapa perintah dasar Linux:
                     berikan command 'who' dan klick tombol TAB (double/duaKali) 
                     nantinya CLI akan mengeluarkan output 'who', 'whoami', 'whois'. Juga bisa
                     digunakan untuk mempercepat penulisan command.
-*. 'clear'        = Digunakan untuk membersihkan tampilan dalam terminal 
+9. 'clear'        = Digunakan untuk membersihkan tampilan dalam terminal 
                     setelah kita gunakan untuk memberikan beberapa perintah.
-*. 'touch'        = Untuk membuat file timestamp seperti file '.txt'
-*. 'mkdir' (make directories) = Digunakan untuk membuat suatu direktori baru.
-*. 'mkdir -p'     = Digunakan untuk membuat direktori lebih dari satu di folder yang dibuat dengan -p (parent).
-*. 'cd' (change directories) = Digunakan untuk berpindah direktori.
-*. 'cp' (copy)    = Digunakan untuk Copy file dan direktori,
+10. 'touch'        = Untuk membuat file timestamp seperti file '.txt'
+11. 'mkdir' (make directories) = Digunakan untuk membuat suatu direktori baru.
+12. 'mkdir -p'     = Digunakan untuk membuat direktori lebih dari satu di folder yang dibuat dengan -p (parent).
+13. 'cd' (change directories) = Digunakan untuk berpindah direktori.
+14. 'cp' (copy)    = Digunakan untuk Copy file dan direktori,
                      contoh: 'cp [nama file awal] [tujuan] [nama file baru]'
                      'cp test.txt ~/Documents/Latihan/testBaru.txt'
                      'cp test.txt ..(dua titik digunakan untuk copy file direktori sebelumnya)/[nama file awal] 
                      .(titik digunakan untuk paste ke direktori saat ini)'
-*. 'mv'	     = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti nama file atau direktori,
+15. 'mv'	     = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti nama file atau direktori,
 			    contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
                 contoh ganti nama file: 'mv [nama awal] [nama baru]'
-*. 'rm' (remove) = Digunakan untuk menghapus suatu file.
-*. 'rmdir'       = Digunakan untuk menghapus suatu direktori.
+16. 'rm' (remove) = Digunakan untuk menghapus suatu file.
+17. 'rmdir'       = Digunakan untuk menghapus suatu direktori.
                    Bisa juga dengan menggunakan perintah 'rm -r' yang nantinya akan ditanyai jika ada file yang dilindungi.
                    Bisa juga dengan menggunakan perintah 'rm -rf' yang nantinya langsung dihapus tanpa ditanyai oleh sistem
                    jika ada file yang dilindungi. r untuk recursive dan f untuk force.
-*. 'sudo'        = Digunakan untuk mengganti user.
+18. 'sudo'        = Digunakan untuk mengganti user.
                     contoh : 'sudo su' digunakan untuk mengganti user biasa/normal menjadi user root.
                     su = super user.
-*. 'exit'        = Digunakan untuk keluar dari user saat ini di terminal/CLI.
-*. 'history'     = Digunakan untuk melihat riwayat/history perintah-perintah yang sudah pernah 
+19. 'exit'        = Digunakan untuk keluar dari user saat ini di terminal/CLI.
+20. 'history'     = Digunakan untuk melihat riwayat/history perintah-perintah yang sudah pernah 
                    kita jalankan dalam suatu terminal/CLI.
 *. 'file'    = Untuk mengidentifikasi tipe suatu file berdasarkan isi filenya bukan ekstensinya.
 *. 'tr a-z A-Z'   = Digunakan untuk mengubah dari huruf default menjadi huruf besar/kecil 
