@@ -1,4 +1,4 @@
-<======= Selamat datang di dokumentasi saya dalam hal perintah/command Linux =======>
+<=======//\\ Selamat datang di dokumentasi saya dalam hal perintah/command Dasar Linux //\\=======>
 
 Disini ada beberapa perintah dasar Linux:
 1. 'whoami'     = Digunakan untuk menampilkan nama User.
@@ -49,6 +49,33 @@ Disini ada beberapa perintah dasar Linux:
 *. 'echo'    = Digunakan untuk menghasilkan string atau print string dalam CLI.
 *. '
 
+
+<=== Beberapa perintah/command tentang Package Manager ===>
+
+1. 'sudo apt update'   = Digunakan untuk mendownload paket informasi dari repository.
+2. 'sudo apt upgrade'  = Digunakan untuk menginstall versi terbaru dari paket terbaru
+                         yang sudah didownload.
+3. 'sudo apt install'  = Digunakan untuk menginstall paket baru seperti aplikasi atau tools
+                         ke dalam sistem.
+4. 'sudo apt remove'   = Digunakan untuk menguninstall paket tetapi tidak menghapus file
+                         konfigurasinya.
+
+Penjelasan tentang CLI Package Manager
+1. Update     = Digunakan untuk mendownload paket informasi dari semua konfigurasi 
+                sumber/source repository distro Linux yg digunakan.
+2. Upgrade    = Digunakan untuk menginstall versi terbaru dari semua paket yang sudah
+                didownload sebelumnya menggunakan perintah 'sudo apt update'.
+3. Install    = Digunakan untuk menginstall paket baru seperti aplikasi atau tools(alat)
+                ke dalam sistem.
+4. Remove     = Digunakan untuk menguninstall suatu paket, 
+                tetapi tidak menghapus file konfigurasi dari sistem.
+5. Purge      = Mirip atau hampir sama dengan Remove, 
+                tetapi juga menghapus file konfigurasi dari sistem.
+6. Autoremove = Digunakan untuk menghapus paket-paket yang tidak lagi dibutuhkan,
+                biasanya keterkaitan/ketergantungan paket lain yang sudah dicopot/uninstall.
+7. Search     = Digunakan untuk mencari paket dalam repository.
+8. Show       = Digunakan untuk menampilkan informasi detail dari suatu paket,
+                seperti versi, dependensi/ketergantungan, dan ukuran.
 
 
 Penjelasan lain-lain:
