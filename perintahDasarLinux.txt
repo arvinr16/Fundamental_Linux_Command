@@ -52,13 +52,18 @@ Disini ada beberapa perintah dasar Linux:
 
 <=== Beberapa perintah/command tentang Package Manager ===>
 
-1. 'sudo apt update'   = Digunakan untuk mendownload paket informasi dari repository.
-2. 'sudo apt upgrade'  = Digunakan untuk menginstall versi terbaru dari paket terbaru
-                         yang sudah didownload.
-3. 'sudo apt install'  = Digunakan untuk menginstall paket baru seperti aplikasi atau tools
-                         ke dalam sistem.
-4. 'sudo apt remove'   = Digunakan untuk menguninstall paket tetapi tidak menghapus file
-                         konfigurasinya.
+1. 'sudo apt update'    = Digunakan untuk mendownload paket informasi dari repository.
+2. 'sudo apt upgrade'   = Digunakan untuk menginstall versi terbaru dari paket terbaru
+                          yang sudah didownload.
+3. 'sudo apt install'   = Digunakan untuk menginstall paket baru seperti aplikasi atau tools
+                          ke dalam sistem.
+4. 'sudo apt remove'    = Digunakan untuk menguninstall paket tetapi tidak menghapus file
+                          konfigurasinya.
+5. 'sudo apt purge'     = Kegunaannya sama dengan 'sudo apt remove', 
+                          tetapi kalau 'sudo apt purge' menghapus semua file konfigurasi dari sistem.
+6. 'sudo apt autoremove = Digunakan untuk menghapus paket-paket yang sudah tidak dibutuhkan.
+7. 'apt search'         = Digunakan untuk mencari nama paket dalam daftar repository.
+8. 'apt show'           = Digunakan untuk menampilkan informasi dari suatu paket.
 
 Penjelasan tentang CLI Package Manager
 1. Update     = Digunakan untuk mendownload paket informasi dari semua konfigurasi 
