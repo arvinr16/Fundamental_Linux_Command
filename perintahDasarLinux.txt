@@ -88,4 +88,3 @@ Penjelasan lain-lain:
 2. '..' (titik dua)  = Titik dua berarti direktori sebelumnya pada saat kita membuka suatu direktori.
 3. '.(file)' (titik) = Awalan file/folder yang ada titiknya, 
                        bertanda dalam terminal/CLI untuk sebuah file yang berarti file tersebut di hide atau disembunyikan
-
