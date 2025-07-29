@@ -100,7 +100,7 @@ Disini ada beberapa perintah dasar Linux:
 <=========================================================================================================>
 
 
-<=== Beberapa perintah Redirection & Permission ===>
+<=== Redirection & Permission Command ===>
 
 1. '>' (Redirection Operator) = Digunakan untuk menyimpan hasil dari suatu perintah command,
                                 contoh: 'ls > ls.txt' yang nantinya akan membuat satu file .txt
@@ -153,6 +153,44 @@ Penjelasan Command Permission = Pada Linux permission adalah hak dalam mengakses
                                         'chmod 755 contoh.txt' yang nantinya file 'contoh.txt' akan
                                         ditambahkan Value of Permissionnya.
 
+<=========================================================================================================>
+
+<=== Process Management Command ===>
+
+1. '&'    = Menambahkan '&' di akhir perintah/command akan menjalankan proses tersebut berjalan
+            di background/latar belakang, sehingga terminal bisa digunakan untuk proses lainnya.
+            contoh: 'nano &' yang nantinya akan membuat app nano berjalan di background.
+2. 'ps'   = Digunakan untuk menampilkan snapshot proses yang sedang berjalan saat ini 
+            (hanya satu kali).
+            contoh: 'ps aux' yang nantinya akan menampilkan beberapa informasi 
+            yang sedang berjalan saat ini.
+            a = semua proses dari semua user, i = informasi tentang user,-
+            x = proses yang tidak terikat dengan terminal.
+3 'top'   = Digunakan untuk menampilkan proses saat ini yang sedang berjalan secara terus menerus, 
+            berbeda dengan 'ps' yang hanya sekali dijalankan 
+            tanpa diteruskan seterusnya atau menampilkan snapshot saja.
+            contoh: 'top' yang nantinya akan menampilkan proses-proses yang sedang berjalan secara
+            terus menerus.
+            contoh untuk mencari proses yang sedang berjalan:
+            'top -bc | grep [nama proses yang dicari]' yang nantinya akan menampilkan-
+            suatu proses pada nama yang kita cari
+4. 'jobs' = Menampilkan proses yang berjalan di background atau sedang berhenti di sesi terminal saat ini.
+5. 'fg'   = Digunakan untuk mengembalikannya ke foreground/layar default 
+            pada proses yang berada di background.
+6. 'bg'   = Digunakan untuk melanjutkan proses di background.
+7. 'renice = Digunakan untuk menghubah Nilai prioritas dari proses yang sedang berjalan
+             contoh: 'renice -n [nilai prioritas] -p [nomor PID nya]' 
+             yang nantinya akan mengubah nilai prioritas dari proses yang sedang berjalan.
+             Penjelasan nilai prioritas, -20 = Prioritas tinggi, 0 = Prioritas default,-
+             +19 = Prioritas paling rendah. 
+             Semakin rendah nilai prioritas maka semakin tinggi prioritas proses tersebut.
+
+Penjelasan Nilai Prioritas 'Nice'
+* Digunakan untuk mengatur prioritas suatu proses oleh CPU Scheduler,-
+  untuk mempertimbangkan proses mana yang akan dieksekusi terlebih dahulu,-
+  terutama saat CPU sedang sibuk
+
+<=========================================================================================================>
 
 Penjelasan lain-lain:
 1. '.' (satu titik)  = Titik satu berarti direktori sekarang.
