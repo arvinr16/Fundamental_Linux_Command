@@ -55,6 +55,7 @@ Disini ada beberapa perintah dasar Linux:
 
 <=========================================================================================================>
 
+
 <=== Beberapa perintah/command tentang Package Manager ===>
 
 1. 'sudo apt update'    = Digunakan untuk mendownload paket informasi dari repository.
@@ -95,12 +96,114 @@ Disini ada beberapa perintah dasar Linux:
 7. Search     = Digunakan untuk mencari paket dalam repository.
 8. Show       = Digunakan untuk menampilkan informasi detail dari suatu paket,
                 seperti versi, dependensi/ketergantungan, dan ukuran.
+
 <=========================================================================================================>
 
 
+<=== Redirection & Permission Command ===>
+
+1. '>' (Redirection Operator) = Digunakan untuk menyimpan hasil dari suatu perintah command,
+                                contoh: 'ls > ls.txt' yang nantinya akan membuat satu file .txt
+                                yang bernama 'ls.txt' yang akan menyimpan output dari perintah 'ls'
+                                pada direktori saat menggunakan perintah redirection tersebut 'ls > ls.txt'.
+                                Juga bisa digunakan untuk membuat output dari sebuah perintah kedalam file,
+                                contoh: 'echo "Hello World" > output.txt', yang nantinya akan menambahkan
+                                output "Hello World" ke dalam 'output.txt', jika file tersebut sudah ada 
+                                isinya, isinya yang lama akan dihapus dan diganti dengan output baru
+                                tersebut.
+2. '>>' (Append Operator)     = Digunakan untuk menambahkan output ke akhir file tanpa menghapus isi file
+                                sebelumnya,
+                                contoh: 'echo "Hello World" >> output.txt', yang nantinya akan menambahkan
+                                output "Hello World" ke bagian akhir file tanpa menghapus isi file 
+                                sebelumnya.
+3. 'wc'(Word Count)           = Digunakan untuk menghitung jumlah baris, kata, karakter, dan byte,
+                                contoh: 'wc -c example.txt' yang nantinya akan mengeluarkan output byte
+                                dari file example.txt tersebut,
+                                -l = Menghitung jumlah baris, -w = Menghitung jumlah kata, -m = Menghitung
+                                jumlah karakter (multibyte), -c = Menghitung jumlah byte (ukuran file).
+4. Penggunaan '|' (pipe)      = Digunakan untuk menyambung command ketika command pertama 
+                                sudah dijalankan,
+                                contoh: 'ls | grep *.txt' yang nantinya akan menampilkan 
+                                output semua file yang berekstensi/berjenis .txt.
+5. 'grep'                     = Digunakan untuk mencari pola teks di dalam file
+                                atau untuk mencari file tertentu.
+                                contoh: 'ls | grep "\.txt$" yang nantinya hanya akan menampilkan output
+                                berekstensi .txt saja. 
+                                \. = Memastikan file mengandung . (titik), 
+                                $  = Akhir baris, memastikan akhiran file adalah .txt saja.
+6. '&&'                       = Operator logika AND di terminal/CLI Linux. Digunakan untuk menjalankan
+                                perintah kedua hanya jika perintah pertama berhasil di lakukan.
+                                contoh: 'command1 && command2' yang nantinya akan 
+                                menjalankan 'command1' terlebih dahulu sampai sukses (tanpa error)
+                                baru setelah itu menjalankan 'command2', jika gagal di 'command1' menggunakan
+                                'command2' tidak akan dijalankan.
+Penjelasan Command Permission = Pada Linux permission adalah hak dalam mengakses suatu file.
+                                Pada permission di Linux ada 3 jenis user utama yaitu:
+                                1. Owner, 2. Group, 3. Other.
+                                r = Read (membaca), w = Write (menulis), x = Execute (mengeksekusi),
+                                Value of Permission : Read = 4, Write = 2, Execute = 1.
+                                contoh: pada file 'contoh.txt' memiliki output seperti ini ketika command-
+                                'ls -la' digunakan: -rw-r--r-- yang berarti user Owner hanya bisa-
+                                Read dan Write tanpa Execute dengan acuan 'rw-' r untuk read, w untuk Write.
+                                Jika user tersebut bisa menggunakan semua Value of Permission, output dari-
+                                perintah 'ls -la' nantinya akan seperti ini 'rwx' r = read,- 
+                                w = write, dan x = execute.
+7. 'chmod'                    = Digunakan untuk mengubah Value of Permission dari suatu file.
+                                contoh: 'chmod [Nilai Value of Permission] [nama file]
+                                        'chmod 755 contoh.txt' yang nantinya file 'contoh.txt' akan
+                                        ditambahkan Value of Permissionnya.
+
+<=========================================================================================================>
+
+<=== Process Management Command ===>
+
+1. '&'    = Menambahkan '&' di akhir perintah/command akan menjalankan proses tersebut berjalan
+            di background/latar belakang, sehingga terminal bisa digunakan untuk proses lainnya.
+            contoh: 'nano &' yang nantinya akan membuat app nano berjalan di background.
+2. 'ps'   = Digunakan untuk menampilkan snapshot proses yang sedang berjalan saat ini 
+            (hanya satu kali).
+            contoh: 'ps aux' yang nantinya akan menampilkan beberapa informasi 
+            yang sedang berjalan saat ini.
+            a = semua proses dari semua user, i = informasi tentang user,-
+            x = proses yang tidak terikat dengan terminal.
+3 'top'   = Digunakan untuk menampilkan proses saat ini yang sedang berjalan secara terus menerus, 
+            berbeda dengan 'ps' yang hanya sekali dijalankan 
+            tanpa diteruskan seterusnya atau menampilkan snapshot saja.
+            contoh: 'top' yang nantinya akan menampilkan proses-proses yang sedang berjalan secara
+            terus menerus.
+            contoh untuk mencari proses yang sedang berjalan:
+            'top -bc | grep [nama proses yang dicari]' yang nantinya akan menampilkan-
+            suatu proses pada nama yang kita cari
+4. 'jobs' = Menampilkan proses yang berjalan di background atau sedang berhenti di sesi terminal saat ini.
+5. 'fg'   = Digunakan untuk mengembalikannya ke foreground/layar default 
+            pada proses yang berada di background.
+6. 'bg'   = Digunakan untuk melanjutkan proses di background.
+7. 'renice = Digunakan untuk menghubah Nilai prioritas dari proses yang sedang berjalan
+             contoh: 'renice -n [nilai prioritas] -p [nomor PID nya]' 
+             yang nantinya akan mengubah nilai prioritas dari proses yang sedang berjalan.
+             Penjelasan nilai prioritas, -20 = Prioritas tinggi, 0 = Prioritas default,-
+             +19 = Prioritas paling rendah. 
+             Semakin rendah nilai prioritas maka semakin tinggi prioritas proses tersebut.
+
+Penjelasan Nilai Prioritas 'Nice'
+* Digunakan untuk mengatur prioritas suatu proses oleh CPU Scheduler,-
+  untuk mempertimbangkan proses mana yang akan dieksekusi terlebih dahulu,-
+  terutama saat CPU sedang sibuk
+
+<=========================================================================================================>
 
 Penjelasan lain-lain:
 1. '.' (satu titik)  = Titik satu berarti direktori sekarang.
 2. '..' (titik dua)  = Titik dua berarti direktori sebelumnya pada saat kita membuka suatu direktori.
 3. '.(file)' (titik) = Awalan file/folder yang ada titiknya, 
-                       bertanda dalam terminal/CLI untuk sebuah file yang berarti file tersebut di hide atau disembunyikan
+                       bertanda dalam terminal/CLI untuk sebuah file yang berarti 
+                       file tersebut di hide atau disembunyikan
+4. 'bit'             = Bit adalah singkatan dari 'Binary Digit' yaitu unit data terkecil di komputer.
+                       Nilainya hanya bisa 0 dan 1.
+5. 'byte'            = Byte terdiri dari 8 bit. Satu byte dapat mewakili satu karakter ASCII, 
+                       (seperti A, 1, atau !) pada kebanyakan sistem.
+6. '-'               = '-' Menandakan ini adalah sebuah file ketika kita menggunakan command 'ls -la'
+7. 'd'               = 'd' Menandakan ini adalah sebuah direktori ketika kita menggunakan command-
+                       'ls -la'.
+
+
