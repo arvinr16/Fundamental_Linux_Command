@@ -29,10 +29,10 @@ Disini ada beberapa perintah dasar Linux:
                      'cp test.txt ~/Documents/Latihan/testBaru.txt'
                      'cp test.txt ..(dua titik digunakan untuk copy file direktori sebelumnya)/[nama file awal] 
                      .(titik digunakan untuk paste ke direktori saat ini)'
-15. 'mv'	     = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti 
-                   nama file atau direktori,
-			        contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
-                    contoh ganti nama file: 'mv [nama awal] [nama baru]'
+15. 'mv'	         = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti 
+                     nama file atau direktori,
+			               contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
+                     contoh ganti nama file: 'mv [nama awal] [nama baru]'
 16. 'rm' (remove) = Digunakan untuk menghapus suatu file.
 17. 'rmdir'       = Digunakan untuk menghapus suatu direktori.
                     Bisa juga dengan menggunakan perintah 'rm -r' 
@@ -192,7 +192,7 @@ Penjelasan Nilai Prioritas 'Nice'
 
 <=========================================================================================================>
 
-Penjelasan lain-lain:
+<//\\===Penjelasan lain-lain===//\\>
 1. '.' (satu titik)  = Titik satu berarti direktori sekarang.
 2. '..' (titik dua)  = Titik dua berarti direktori sebelumnya pada saat kita membuka suatu direktori.
 3. '.(file)' (titik) = Awalan file/folder yang ada titiknya, 
@@ -206,4 +206,17 @@ Penjelasan lain-lain:
 7. 'd'               = 'd' Menandakan ini adalah sebuah direktori ketika kita menggunakan command-
                        'ls -la'.
 
+<=========================================================================================================>
 
+
+
+<//\\===Beberapa Tips & Trick===//\\>
+1. '{}' = Bisa digunakan untuk mengcopy/memindahkan beberapa file/direktori,-
+          kita bisa menggunakan tanda kurung kurawal '{}'
+          contoh: 'cp -r {Programming,Networking} [direktori/path tujuan]'
+                  'mv {Programming,Networking} [direktori/path tujuan]'
+
+2. 'ls -lh' = Bisa digunakan untuk melihat ukuran dari suatu file.
+              contoh: 'ls -lh [nama file]' yang nantinya akan menampilkan ukuran dari file tersebut,- 
+              dengan output ukuran file yang lebih manusiawi atau bisa dibaca manusia,-
+              jika ingin output ukuran file yang akurat cukup ketikan 'ls -l [nama file]' seperti itu.
