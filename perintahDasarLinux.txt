@@ -51,7 +51,16 @@ Disini ada beberapa perintah dasar Linux:
                     dengan mengkombinasikan command 'echo' dan '| (pipe)'.
 *. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
 *. 'echo'    = Digunakan untuk menghasilkan string atau print string dalam CLI.
-*. '
+               contoh: echo "Hello World" yang nantinya akan menampilkan output 'Hello World'.
+*. 'find'    = Digunakan untuk mencari suatu file atau direktori.
+               contoh: 'find . -name [nama file]'
+                       'find . -name "*.txt"'
+                       'find [lokasi awal] -type f/d -name "*.txt"'
+                       'find . -type f/d -name "contoh.txt"'
+                       'find /home/user -type f/d -name "contoh.txt"
+               penjelasan: -type untuk mencari file atau direktori, 'f = file', 'd = directory', dll.
+                           Bisa gunakan '-iname' jika ingin mencari file yang ada huruf besar-kecil.
+                           Bisa gunakan '.' (titik) jika ingin mencari file/direktori saat ini.
 
 <=========================================================================================================>
 
@@ -164,7 +173,7 @@ Penjelasan Command Permission = Pada Linux permission adalah hak dalam mengakses
             (hanya satu kali).
             contoh: 'ps aux' yang nantinya akan menampilkan beberapa informasi 
             yang sedang berjalan saat ini.
-            a = semua proses dari semua user, i = informasi tentang user,-
+            a = semua proses dari semua user, u = informasi tentang user,-
             x = proses yang tidak terikat dengan terminal.
 3 'top'   = Digunakan untuk menampilkan proses saat ini yang sedang berjalan secara terus menerus, 
             berbeda dengan 'ps' yang hanya sekali dijalankan 
@@ -210,7 +219,7 @@ Penjelasan Nilai Prioritas 'Nice'
 
 
 
-<//\\===Beberapa Tips & Trick===//\\>
+<//\\===Beberapa Tips & Tricks===//\\>
 1. '{}' = Bisa digunakan untuk mengcopy/memindahkan beberapa file/direktori,-
           kita bisa menggunakan tanda kurung kurawal '{}'
           contoh: 'cp -r {Programming,Networking} [direktori/path tujuan]'
@@ -220,3 +229,7 @@ Penjelasan Nilai Prioritas 'Nice'
               contoh: 'ls -lh [nama file]' yang nantinya akan menampilkan ukuran dari file tersebut,- 
               dengan output ukuran file yang lebih manusiawi atau bisa dibaca manusia,-
               jika ingin output ukuran file yang akurat cukup ketikan 'ls -l [nama file]' seperti itu.
+3. '/' (slash) = Bisa digunakan untuk mencari 'keyword' pada saat kita menggunakan command 'man'.
+                 contoh: kita masuk di dalam proses command 'man', 
+                         setelah itu kita menggunakan '/' dan mengetik keyword yang ingin dicari.
+                         '/background'
