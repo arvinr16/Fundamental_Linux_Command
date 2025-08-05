@@ -233,4 +233,3 @@ Penjelasan Nilai Prioritas 'Nice'
                  contoh: kita masuk di dalam proses command 'man', 
                          setelah itu kita menggunakan '/' dan mengetik keyword yang ingin dicari.
                          '/background'
-
