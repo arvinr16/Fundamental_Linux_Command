@@ -46,21 +46,23 @@ Disini ada beberapa perintah dasar Linux:
 19. 'exit'        = Digunakan untuk keluar dari user saat ini di terminal/CLI.
 20. 'history'     = Digunakan untuk melihat riwayat/history perintah-perintah yang sudah pernah 
                     kita jalankan dalam suatu terminal/CLI.
-*. 'file'    = Untuk mengidentifikasi tipe suatu file berdasarkan isi filenya bukan ekstensinya.
-*. 'tr a-z A-Z'   = Digunakan untuk mengubah dari huruf default menjadi huruf besar/kecil 
-                    dengan mengkombinasikan command 'echo' dan '| (pipe)'.
-*. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
-*. 'echo'    = Digunakan untuk menghasilkan string atau print string dalam CLI.
-               contoh: echo "Hello World" yang nantinya akan menampilkan output 'Hello World'.
-*. 'find'    = Digunakan untuk mencari suatu file atau direktori.
-               contoh: 'find . -name [nama file]'
-                       'find . -name "*.txt"'
-                       'find [lokasi awal] -type f/d -name "*.txt"'
-                       'find . -type f/d -name "contoh.txt"'
-                       'find /home/user -type f/d -name "contoh.txt"
-               penjelasan: -type untuk mencari file atau direktori, 'f = file', 'd = directory', dll.
-                           Bisa gunakan '-iname' jika ingin mencari file yang ada huruf besar-kecil.
-                           Bisa gunakan '.' (titik) jika ingin mencari file/direktori saat ini.
+21. 'file'    = Untuk mengidentifikasi tipe suatu file berdasarkan isi filenya bukan ekstensinya.
+22. 'tr a-z A-Z'   = Digunakan untuk mengubah dari huruf default menjadi huruf besar/kecil 
+                     dengan mengkombinasikan command 'echo' dan '| (pipe)'.
+23. '|' (pipe) = Digunakan untuk menyambung output dari suatu command/perintah ke input command berikutnya.
+24. 'echo'     = Digunakan untuk menghasilkan string atau print string dalam CLI.
+                 contoh: echo "Hello World" yang nantinya akan menampilkan output 'Hello World'.
+25. 'find'     = Digunakan untuk mencari suatu file atau direktori.
+                 contoh: 'find . -name [nama file]'
+                         'find . -name "*.txt"'
+                         'find [lokasi awal] -type f/d -name "*.txt"'
+                         'find . -type f/d -name "contoh.txt"'
+                         'find /home/user -type f/d -name "contoh.txt"
+                 penjelasan: -type untuk mencari file atau direktori, 'f = file', 'd = directory', dll.
+                             Bisa gunakan '-iname' jika ingin mencari file yang ada huruf besar-kecil.
+                             Bisa gunakan '.' (titik) jika ingin mencari file/direktori saat ini.
+26. 'stat'     = Digunakan untuk menampilkan informasi tentang suatu file dengan metadata yang lengkap,-
+                 seperti menampilkan waktu akses, modifikasi, perubahan, nomor inode, dll.
 
 <=========================================================================================================>
 
@@ -214,6 +216,8 @@ Penjelasan Nilai Prioritas 'Nice'
 6. '-'               = '-' Menandakan ini adalah sebuah file ketika kita menggunakan command 'ls -la'
 7. 'd'               = 'd' Menandakan ini adalah sebuah direktori ketika kita menggunakan command-
                        'ls -la'.
+8. 'inode'           = 'inode' adalah kepanjangan dari 'index node', yaitu struktur data di sistem-
+                       berkas Linux yang menyimpan informasi tentang sebuah file kecuali namanya dan isi datanya.
 
 <=========================================================================================================>
 
