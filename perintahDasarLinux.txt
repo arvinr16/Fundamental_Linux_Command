@@ -29,9 +29,9 @@ Disini ada beberapa perintah dasar Linux:
                      'cp test.txt ~/Documents/Latihan/testBaru.txt'
                      'cp test.txt ..(dua titik digunakan untuk copy file direktori sebelumnya)/[nama file awal] 
                      .(titik digunakan untuk paste ke direktori saat ini)'
-15. 'mv'	         = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti 
+15. 'mv'	   = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti 
                      nama file atau direktori,
-			               contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
+		     contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
                      contoh ganti nama file: 'mv [nama awal] [nama baru]'
 16. 'rm' (remove) = Digunakan untuk menghapus suatu file.
 17. 'rmdir'       = Digunakan untuk menghapus suatu direktori.
@@ -63,6 +63,7 @@ Disini ada beberapa perintah dasar Linux:
                              Bisa gunakan '.' (titik) jika ingin mencari file/direktori saat ini.
 26. 'stat'     = Digunakan untuk menampilkan informasi tentang suatu file dengan metadata yang lengkap,-
                  seperti menampilkan waktu akses, modifikasi, perubahan, nomor inode, dll.
+27. 'lsb_release -a' = Digunakan untuk melihat versi yang digunakan dalam sistem operasi distro linux.
 
 <=========================================================================================================>
 
