@@ -143,6 +143,9 @@ Disini ada beberapa perintah dasar Linux:
                                 berekstensi .txt saja. 
                                 \. = Memastikan file mengandung . (titik), 
                                 $  = Akhir baris, memastikan akhiran file adalah .txt saja.
+                                Bisa juga digunakan untuk mencari file pada direktori,-
+                                dengan menggunakan command berikut 'ls | grep "testing.txt"'
+                                yang nantinya akan menampilkan file yang dicari tersebut.
 6. '&&'                       = Operator logika AND di terminal/CLI Linux. Digunakan untuk menjalankan
                                 perintah kedua hanya jika perintah pertama berhasil di lakukan.
                                 contoh: 'command1 && command2' yang nantinya akan 
