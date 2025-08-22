@@ -29,9 +29,9 @@ Disini ada beberapa perintah dasar Linux:
                      'cp test.txt ~/Documents/Latihan/testBaru.txt'
                      'cp test.txt ..(dua titik digunakan untuk copy file direktori sebelumnya)/[nama file awal] 
                      .(titik digunakan untuk paste ke direktori saat ini)'
-15. 'mv'	         = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti 
+15. 'mv'	   = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti 
                      nama file atau direktori,
-			               contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
+		     contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
                      contoh ganti nama file: 'mv [nama awal] [nama baru]'
 16. 'rm' (remove) = Digunakan untuk menghapus suatu file.
 17. 'rmdir'       = Digunakan untuk menghapus suatu direktori.
@@ -64,6 +64,7 @@ Disini ada beberapa perintah dasar Linux:
 26. 'stat'     = Digunakan untuk menampilkan informasi tentang suatu file dengan metadata yang lengkap,-
                  seperti menampilkan waktu akses, modifikasi, perubahan, nomor inode, dll.
 27. 'dig'      = Digunakan untuk menampilkan IP Address pada suatu nama domain.
+28. 'lsb_release -a' = Digunakan untuk melihat versi yang digunakan dalam sistem operasi distro linux.
 
 <=========================================================================================================>
 
@@ -143,6 +144,9 @@ Disini ada beberapa perintah dasar Linux:
                                 berekstensi .txt saja. 
                                 \. = Memastikan file mengandung . (titik), 
                                 $  = Akhir baris, memastikan akhiran file adalah .txt saja.
+                                Bisa juga digunakan untuk mencari file pada direktori,-
+                                dengan menggunakan command berikut 'ls | grep "testing.txt"'
+                                yang nantinya akan menampilkan file yang dicari tersebut.
 6. '&&'                       = Operator logika AND di terminal/CLI Linux. Digunakan untuk menjalankan
                                 perintah kedua hanya jika perintah pertama berhasil di lakukan.
                                 contoh: 'command1 && command2' yang nantinya akan 
