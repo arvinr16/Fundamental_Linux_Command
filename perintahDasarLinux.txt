@@ -64,7 +64,6 @@ Disini ada beberapa perintah dasar Linux:
 26. 'stat'     = Digunakan untuk menampilkan informasi tentang suatu file dengan metadata yang lengkap,-
                  seperti menampilkan waktu akses, modifikasi, perubahan, nomor inode, dll.
 27. 'dig'      = Digunakan untuk menampilkan IP Address pada suatu nama domain.
-
 28. 'lsb_release -a' = Digunakan untuk melihat versi yang digunakan dalam sistem operasi distro linux.
 
 <=========================================================================================================>
