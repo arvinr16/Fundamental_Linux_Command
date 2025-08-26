@@ -65,6 +65,9 @@ Disini ada beberapa perintah dasar Linux:
                  seperti menampilkan waktu akses, modifikasi, perubahan, nomor inode, dll.
 27. 'dig'      = Digunakan untuk menampilkan IP Address pada suatu nama domain.
 28. 'lsb_release -a' = Digunakan untuk melihat versi yang digunakan dalam sistem operasi distro linux.
+29. 'sudo shutdown now' = Digunakan untuk mematikan sistem komputer kita sekarang juga.
+                          Opsi lain ketika ingin mematikan sistem komputer dengan hitung mundur:
+                          'sudo shutdown +5'
 
 <=========================================================================================================>
 
