@@ -226,6 +226,13 @@ Penjelasan Nilai Prioritas 'Nice'
                        'ls -la'.
 8. 'inode'           = 'inode' adalah kepanjangan dari 'index node', yaitu struktur data di sistem-
                        berkas Linux yang menyimpan informasi tentang sebuah file kecuali namanya dan isi datanya.
+9. Jenis-jenis file pada output command 'stat' : 1. regular file → file biasa
+                                                 2. directory → direktori/folder
+                                                 3. symbolic link → symlink
+                                                 4. block special file → device blok (misalnya /dev/sda)
+                                                 5. character special file → device karakter (misalnya /dev/tty)
+                                                 6. socket → file socket
+                                                 7. FIFO → named pipe
 
 <=========================================================================================================>
 
