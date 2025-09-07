@@ -1,0 +1,2 @@
+1. Vim: buka → i → ketik → Esc → :wq/:w/:q.
+2. Nano: buka → ketik → Ctrl+O/Ctrl+S → Ctrl+X.
