@@ -9,6 +9,9 @@ Disini ada beberapa perintah dasar Linux:
 5. 'ls -la'       = Digunakan untuk menampilkan file yang tersembunyi pada direktori command 'ls -la'
                     diberikan. Biasanya awalan file ada '.' titiknya.
 6. 'ls ..'        = Digunakan untuk menampilkan file pada direktori sebelum direktori kita berada saat ini.
+                    Opsi lain untuk menemukan path file berjenis 'symbolic link'
+                    'ls -l $(which sqlmap)' yang nantinya akan memunculkan output path file asli-
+                    bukan hanya linknya saja.
 7. 'man' (manual) = Digunakan untuk menampilkan dokumentasi command/perintah, seperti 'man ls' yang
                     nantinya akan menampilkan dokumentasi perintah dari 'ls'.
 8. 'Click TAB'    = Gunakan tombol TAB dalam memberikan command/perintah untuk menampilkan
