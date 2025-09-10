@@ -257,3 +257,6 @@ Penjelasan Nilai Prioritas 'Nice'
                  contoh: kita masuk di dalam proses command 'man', 
                          setelah itu kita menggunakan '/' dan mengetik keyword yang ingin dicari.
                          '/background'
+4. '--depth 1' = Bisa digunakan ketika kita menggunakan command 'git clone' sebagai opsi command tersebut-
+                 dengan tujuan untuk hanya mengambil snapshot terbaru (commit terakhir saja).
+                 Dengan kelebihan seperti Lebih cepat dan Hemat disk/memory
