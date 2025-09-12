@@ -75,9 +75,13 @@ Disini ada beberapa perintah dasar Linux:
                  contoh: 'which codium' yang nantinya akan menampilkan output '/usr/bin/codium'
 31. 'open'     = Digunakan untuk membukan file berjenis gambar, seperti png, dll
                  contoh: 'open picture.png' yang nantinya akan membuka file png 'picture.png'
-32. 'cat'      = Digunakan untuk membaca atau menampilkan output dari file .txt langsung di CLI
-                 contoh: 'cat file.txt' yang nantinya akan menampilkan isi text langsung di CLI dari-
-                         file 'file.txt' tersebut.
+32. 'cat'      = Digunakan untuk membaca atau menampilkan output dari file '.txt' langsung di CLI
+                 contoh: 'cat teks.txt' yang nantinya akan menampilkan isi file 'teks.txt' langsung-
+                 di CLI.
+33. 'nano'     = Digunakan untuk membuat atau membuka file '.txt' dengan menggunakan tools 'nano'
+                 contoh: 'nano teks.txt' yang nantinya bisa membuat file tersebut jika memang-
+                         belum ada file yang bernama 'teks.txt', atau bisa juga untuk mengedit-
+                         file 'teks.txt' dengan menggunakan tools 'nano' jika file tersebut sudah ada.
 
 <=========================================================================================================>
 
