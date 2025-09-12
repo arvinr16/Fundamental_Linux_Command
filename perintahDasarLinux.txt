@@ -9,6 +9,9 @@ Disini ada beberapa perintah dasar Linux:
 5. 'ls -la'       = Digunakan untuk menampilkan file yang tersembunyi pada direktori command 'ls -la'
                     diberikan. Biasanya awalan file ada '.' titiknya.
 6. 'ls ..'        = Digunakan untuk menampilkan file pada direktori sebelum direktori kita berada saat ini.
+                    Opsi lain untuk menemukan path file berjenis 'symbolic link'
+                    'ls -l $(which sqlmap)' yang nantinya akan memunculkan output path file asli-
+                    bukan hanya linknya saja.
 7. 'man' (manual) = Digunakan untuk menampilkan dokumentasi command/perintah, seperti 'man ls' yang
                     nantinya akan menampilkan dokumentasi perintah dari 'ls'.
 8. 'Click TAB'    = Gunakan tombol TAB dalam memberikan command/perintah untuk menampilkan
@@ -27,8 +30,8 @@ Disini ada beberapa perintah dasar Linux:
 14. 'cp' (copy)    = Digunakan untuk Copy file dan direktori,
                      contoh: 'cp [nama file awal] [tujuan] [nama file baru]'
                      'cp test.txt ~/Documents/Latihan/testBaru.txt'
-                     'cp test.txt ..(dua titik digunakan untuk copy file direktori sebelumnya)/[nama file awal] 
-                     .(titik digunakan untuk paste ke direktori saat ini)'
+                     'cp test.txt ..(dua titik digunakan untuk copy file direktori sebelumnya)/[nama file-
+                     awal] .(titik digunakan untuk paste ke direktori saat ini)'
 15. 'mv'	   = Digunakan untuk memindahkan file dan juga bisa digunakan untuk mengganti 
                      nama file atau direktori,
 		     contoh pindah file    : 'mv [nama awal] [tujuan file ditempatkan]
@@ -68,6 +71,17 @@ Disini ada beberapa perintah dasar Linux:
 29. 'sudo shutdown now' = Digunakan untuk mematikan sistem komputer kita sekarang juga.
                           Opsi lain ketika ingin mematikan sistem komputer dengan hitung mundur:
                           'sudo shutdown +5'
+30. 'which'    = Digunakan untuk menemukan keberadaan file yang dicari di path mana dalam system kita
+                 contoh: 'which codium' yang nantinya akan menampilkan output '/usr/bin/codium'
+31. 'open'     = Digunakan untuk membukan file berjenis gambar, seperti png, dll
+                 contoh: 'open picture.png' yang nantinya akan membuka file png 'picture.png'
+32. 'cat'      = Digunakan untuk membaca atau menampilkan output dari file '.txt' langsung di CLI
+                 contoh: 'cat teks.txt' yang nantinya akan menampilkan isi file 'teks.txt' langsung-
+                 di CLI.
+33. 'nano'     = Digunakan untuk membuat atau membuka file '.txt' dengan menggunakan tools 'nano'
+                 contoh: 'nano teks.txt' yang nantinya bisa membuat file tersebut jika memang-
+                         belum ada file yang bernama 'teks.txt', atau bisa juga untuk mengedit-
+                         file 'teks.txt' dengan menggunakan tools 'nano' jika file tersebut sudah ada.
 
 <=========================================================================================================>
 
@@ -154,8 +168,8 @@ Disini ada beberapa perintah dasar Linux:
                                 perintah kedua hanya jika perintah pertama berhasil di lakukan.
                                 contoh: 'command1 && command2' yang nantinya akan 
                                 menjalankan 'command1' terlebih dahulu sampai sukses (tanpa error)
-                                baru setelah itu menjalankan 'command2', jika gagal di 'command1' menggunakan
-                                'command2' tidak akan dijalankan.
+                                baru setelah itu menjalankan 'command2', jika gagal di 'command1'-
+                                menggunakan 'command2' tidak akan dijalankan.
 Penjelasan Command Permission = Pada Linux permission adalah hak dalam mengakses suatu file.
                                 Pada permission di Linux ada 3 jenis user utama yaitu:
                                 1. Owner, 2. Group, 3. Other.
@@ -225,12 +239,14 @@ Penjelasan Nilai Prioritas 'Nice'
 7. 'd'               = 'd' Menandakan ini adalah sebuah direktori ketika kita menggunakan command-
                        'ls -la'.
 8. 'inode'           = 'inode' adalah kepanjangan dari 'index node', yaitu struktur data di sistem-
-                       berkas Linux yang menyimpan informasi tentang sebuah file kecuali namanya dan isi datanya.
+                       berkas Linux yang menyimpan informasi tentang sebuah file kecuali namanya dan isi-
+                       datanya.
 9. Jenis-jenis file pada output command 'stat' : 1. regular file → file biasa
                                                  2. directory → direktori/folder
                                                  3. symbolic link → symlink
                                                  4. block special file → device blok (misalnya /dev/sda)
-                                                 5. character special file → device karakter (misalnya /dev/tty)
+                                                 5. character special file → device karakter (misalnya-
+                                                    /dev/tty)
                                                  6. socket → file socket
                                                  7. FIFO → named pipe
 
@@ -252,3 +268,6 @@ Penjelasan Nilai Prioritas 'Nice'
                  contoh: kita masuk di dalam proses command 'man', 
                          setelah itu kita menggunakan '/' dan mengetik keyword yang ingin dicari.
                          '/background'
+4. '--depth 1' = Bisa digunakan ketika kita menggunakan command 'git clone' sebagai opsi command tersebut-
+                 dengan tujuan untuk hanya mengambil snapshot terbaru (commit terakhir saja).
+                 Dengan kelebihan seperti Lebih cepat dan Hemat disk/memory
