@@ -82,6 +82,10 @@ Disini ada beberapa perintah dasar Linux:
                  contoh: 'nano teks.txt' yang nantinya bisa membuat file tersebut jika memang-
                          belum ada file yang bernama 'teks.txt', atau bisa juga untuk mengedit-
                          file 'teks.txt' dengan menggunakan tools 'nano' jika file tersebut sudah ada.
+34. 'kill'     = Digunakan untuk menutup aplikasi yang sedang berjalan
+                 contoh: 'kill 40153' yang nantinya akan menutup aplikasi 'Codium'
+                         * perintah kill harus menggunakan ID aplikasinya, untuk melihat-
+                         ID aplikasi bisa menggunakan perintah 'top'.
 
 <=========================================================================================================>
 
