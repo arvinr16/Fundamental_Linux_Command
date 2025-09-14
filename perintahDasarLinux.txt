@@ -78,9 +78,12 @@ Disini ada beberapa perintah dasar Linux:
 32. 'cat'      = Digunakan untuk membaca atau menampilkan output dari file '.txt' langsung di CLI
                  contoh: 'cat teks.txt' yang nantinya akan menampilkan isi file 'teks.txt' langsung-
                  di CLI.
-                 Opsi lain: 'cat teks.txt | xclip -selection clipboard' digunakan untuk mengcopy-
-                 semua teks yang ada di file 'teks.txt'. Seperti 'Ctrl+A dan Ctrl+C' dengan-
-                 cara cepat.
+                 Opsi lain: 1. 'cat teks.txt | xclip -selection clipboard' digunakan untuk mengcopy-
+                               semua teks yang ada di file 'teks.txt'. Seperti 'Ctrl+A dan Ctrl+C'-
+                               dengan cara cepat.
+                            2. 'cat file/file.txt | grep "(kalimat yang mau dicari)" digunakan untuk-
+                                mencari kalimat pada direktori atau file. Bisa menggunakan '-i'
+                                untuk menghindari case sensitive pada kalimat yang dicari.
 33. 'nano'     = Digunakan untuk membuat atau membuka file '.txt' dengan menggunakan tools 'nano'
                  contoh: 'nano teks.txt' yang nantinya bisa membuat file tersebut jika memang-
                          belum ada file yang bernama 'teks.txt', atau bisa juga untuk mengedit-
