@@ -173,6 +173,16 @@ Disini ada beberapa perintah dasar Linux:
                                 $  = Akhir baris, memastikan akhiran file adalah .txt saja.
                                 Bisa juga digunakan untuk mencari file pada direktori,-
                                 dengan menggunakan command berikut 'ls | grep "testing.txt"'
+                                Opsi lain: 1. 'strings (nama file) | grep "(kalimat yg dicari)"'
+                                              digunakan ketika kita ingin mencari kalimat pada file-
+                                              berjenis 'ELF 64-bit' atau bisa kita artikan lain-
+                                              file itu adalah 'Program biner hasil compile'
+                                           2. 'hexdump -C (nama file) | grep "(kalimat yg dicari)"'
+                                              digunakan ketika command 'strings' diatas tidak bisa-
+                                              menampilkan kalimat yang kita cari.
+                                           3. 'xxd (nama file) | grep "(kalimat yg dicari)"' bisa-
+                                              juga digunakan ketika command 'strings' dan 'hexdump'-
+                                              tidak bisa menemukan kalimat yang kita cari.
                                 yang nantinya akan menampilkan file yang dicari tersebut.
 6. '&&'                       = Operator logika AND di terminal/CLI Linux. Digunakan untuk menjalankan
                                 perintah kedua hanya jika perintah pertama berhasil di lakukan.
