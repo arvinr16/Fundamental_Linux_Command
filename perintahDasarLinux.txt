@@ -92,6 +92,8 @@ Disini ada beberapa perintah dasar Linux:
                  contoh: 'kill 40153' yang nantinya akan menutup aplikasi 'Codium'
                          * perintah kill harus menggunakan ID aplikasinya, untuk melihat-
                          ID aplikasi bisa menggunakan perintah 'top'.
+35. 'wget'     = Digunakan untuk mendownload file melalui link.
+                 contoh: 'wget (link)' yang nantinya akan mendownload file dari link tersebut.
 
 <=========================================================================================================>
 
