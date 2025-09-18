@@ -1,0 +1,9 @@
+Berikut adalah cara kita menghapus history CLI yang pernah kita gunakan
+1. 'cat /dev/null > ~/.bash_history'
+2. 'history -c && history -w'
+<=========================================================================================================>
+
+Cara membuat shortcut command tersebut:
+1. 'echo "alias clearhist='history -c && cat /dev/null > ~/.bash_history && history -w'" >> ~/.bashrc'
+2. 'source ~/.bashrc'
+3. 'clearhist'
