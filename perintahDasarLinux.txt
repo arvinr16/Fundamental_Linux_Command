@@ -84,6 +84,11 @@ Disini ada beberapa perintah dasar Linux:
                             2. 'cat file/file.txt | grep "(kalimat yang mau dicari)" digunakan untuk-
                                 mencari kalimat pada direktori atau file. Bisa menggunakan '-i'
                                 untuk menghindari case sensitive pada kalimat yang dicari.
+                            3. 'cat warm | grep -a -i "(kata yg dicari)"' option -a digunakan untuk-
+                                memaksa command grep menganggap suatu file itu teks atau string,-
+                                jika muncul error file tersebut ada berisi binary atau number.
+                            4. 'strings warm | grep -i "(kata yg dicari)"' digunakan untuk mencari teks jika filenya-
+                                campur antara teks + biner.
 33. 'nano'     = Digunakan untuk membuat atau membuka file '.txt' dengan menggunakan tools 'nano'
                  contoh: 'nano teks.txt' yang nantinya bisa membuat file tersebut jika memang-
                          belum ada file yang bernama 'teks.txt', atau bisa juga untuk mengedit-
