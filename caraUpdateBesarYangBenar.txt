@@ -1,0 +1,9 @@
+==>> Panduan atau Cara untuk update Versi OS yang benar di Debian Base <<==
+
+1. Kita bisa gunakan command 'df -h', untuk mengecek sisa ruang disk-
+   yang ada.
+2. Setelah itu kita bisa menggunakan command 'sudo apt clean', digunakan-
+   untuk menghapus file .deb yang sudah pernah diunduh.
+3. Lalu kita bisa gunakan command 'sudo apt autoremove --purge -y', -
+   digunakan untuk membebaskan ruang dari dependensi lama.
+4. 

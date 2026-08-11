@@ -108,6 +108,10 @@ Disini ada beberapa perintah dasar Linux:
 1. 'sudo apt update'    = Digunakan untuk mendownload paket informasi dari repository.
 2. 'sudo apt upgrade'   = Digunakan untuk menginstall versi terbaru dari paket terbaru
                           yang sudah didownload.
+                          Digunakan ketika ingin update cepat, ruang disk terbatas, dan tidak ingin-
+                          ada paket lama yang dihapus.
+3. 'sudo apt full-upgrade' = Digunakan update besar atau setelah lama tidak update, dan ingin-
+                             sistem mempunyai versi yang benar-benar terbaru.
 3. 'sudo apt install'   = Digunakan untuk menginstall paket baru seperti aplikasi atau tools
                           ke dalam sistem.
                           contoh: 'sudo apt install codium' 
