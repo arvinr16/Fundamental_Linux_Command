@@ -1,9 +1,20 @@
 ==>> Panduan atau Cara untuk update Versi OS yang benar di Debian Base <<==
 
-1. Kita bisa gunakan command 'df -h', untuk mengecek sisa ruang disk-
+1. Kita bisa gunakan command 'df -h' = Digunakan untuk mengecek sisa ruang disk-
    yang ada.
-2. Setelah itu kita bisa menggunakan command 'sudo apt clean', digunakan-
+2. Setelah itu kita bisa menggunakan command 'sudo apt clean' = Digunakan-
    untuk menghapus file .deb yang sudah pernah diunduh.
 3. Lalu kita bisa gunakan command 'sudo apt autoremove --purge -y', -
-   digunakan untuk membebaskan ruang dari dependensi lama.
-4. 
+   = Digunakan untuk membebaskan ruang dari dependensi lama.
+4. Terus gunakan command 'sudo dpkg --configure -a' dan-
+   'sudo apt --fix-broken install' = Digunakan untuk memastikan apakah-
+   ada paket rusak atau setengah rusak yang terpasang, jika tidak ada-
+   masalah maka command tersebut tidak akan memunculkan output apapun.
+5. Lalu gunakan command 'sudo apt update' = Digunakan untuk mengupdate-
+   daftar paket yang perlu diupgrade.
+6. 'sudo apt full-upgrade' = Digunakan untuk melakukan upgrade sistem secara-
+   keseluruhan. Bisa menambah adaptor baru dan bisa melepas komponen lama agar-
+   semua cocok.
+7. 'sudo apt autoremove --purge -y' dan 'sudo apt clean' = Digunakan untuk langkah-
+   terakhir dari proses update yang benar, untuk menghapus paket yang tidak-
+   diperlukan lagi dan juga untuk menghapus file paket .deb yang disimpan di cache APT. 
